@@ -8,9 +8,141 @@ html {
     background-color: #fff;
     position: relative;
     margin: 50px auto;
-    padding: 20px 50x;
+    padding: 20px 50px;
 }
 
 .bold {
     font-weight: bold;
+}
+
+/* HEADER */
+
+.header {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 40px;
+}
+
+.main-paragraph {
+    font-style: italic;
+}
+
+/* IMAGEM */
+
+.featured-image {
+    text-align: center;
+    margin-top: 30px;
+} 
+
+.featured-image img {
+    position: relative;
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+.featured-image img:hover {
+    top: -20px;
+    transition: 0.8;
+}
+
+/* BIOGRAFIA */
+
+.biography-container {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed #DDD;
+    border-bottom: 1px dashed #DDD;
+}
+
+/* QUOTES */
+
+.quotes-container {
+    background-color: #DDD;
+    padding: 30px;
+}
+
+.quotes-container h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.quotes-container blockquote {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.quotes-container p {
+    font-style: italic;
+    text-align: center;
+}
+
+/* CUSIOSIDADES */
+
+.curiosities-container {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed #DDD;
+    border-bottom: 1px dashed #DDD;
+}
+
+.curiosities-container span[data-descr] {
+    position: relative;
+    cursor: default;
+}
+
+.curiosities-container span:hover::after {
+    content: attr(data-descr);
+    position: absolute;
+    left: 200px;
+    bottom: -40px;
+    min-width: 200px;
+    color: red;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.curiosities-container li {
+    height: 25px;
+}
+
+/* IMAGEM BOLD */
+
+.img-bold {
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 2px dashed #DDD;
+}
+
+.img-bold img {
+    position: relative;
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
+
+.img-bold img:hover {
+    top: -20px;
+}
+
+/*  INFORMAÇÕES FINAIS */
+.moreinfo-container {
+    text-align: center;
+}
+
+.moreinfo-container h2 {
+    font-size: 17px;
+}
+
+.moreinfo-container p {
+    font-size: 17px;
+}
+
+.moreinfo-container a {
+    text-decoration: none;
 }
