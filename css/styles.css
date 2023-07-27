@@ -52,10 +52,15 @@ html {
 /* BIOGRAFIA */
 
 .biography-container {
+    text-align: center;
     padding: 25px 0;
     margin: 25px 0;
     border-top: 1px dashed #DDD;
     border-bottom: 1px dashed #DDD;
+}
+
+.biography-container p{
+    text-align: center;
 }
 
 /* QUOTES */
@@ -71,34 +76,40 @@ html {
 }
 
 .quotes-container blockquote {
-    font-weight: bold;
-    font-size: 15px;
+    font-size: 17px;
+    text-align: center;
 }
 
 .quotes-container p {
     font-style: italic;
     text-align: center;
+    font-weight: bold;
 }
 
 /* CUSIOSIDADES */
 
 .curiosities-container {
+    /* text-align: center; */
     padding: 25px 0;
     margin: 25px 0;
     border-top: 1px dashed #DDD;
     border-bottom: 1px dashed #DDD;
 }
 
+.curiosities-container h2 {
+    text-align: center;
+}
+
 .curiosities-container span[data-descr] {
     position: relative;
-    cursor: default;
+    cursor: pointer;
 }
 
 .curiosities-container span:hover::after {
     content: attr(data-descr);
     position: absolute;
     left: 200px;
-    bottom: -40px;
+    bottom: -90px;
     min-width: 200px;
     color: red;
     font-size: 14px;
@@ -112,7 +123,6 @@ html {
 /* IMAGEM BOLD */
 
 .img-bold {
-    font-weight: bold;
     text-align: center;
     padding: 30px;
     border-bottom: 2px dashed #DDD;
